@@ -1,5 +1,20 @@
 .container{
     position:absolute;
     background-color:#f0f0f0;
+    height:500px;
+    width:500px;
+    left:50%;
+    top:50%;
+    transform:translate(-50% ,-50%);
+    box-shadow: 16px 16px 10px #d7d7d7;
+    border-radius:20px;
     
+}
+.face{
+    position: relative;
+    height: 250px;
+    width: 60px;
+    background-color: #fce2c4;
+    left:220px;
+    top:200px;
 }
