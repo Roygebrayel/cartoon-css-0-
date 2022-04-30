@@ -16,5 +16,166 @@
     width: 60px;
     background-color: #fce2c4;
     left:220px;
-    top:200px;
+    top:100px;
+    border : 4px solid #ffa945;
+    border-bottom: none;
+    transform: rotate(4deg);
+
+}
+.face::before{
+    content:"";
+    position: absolute;
+    height:14px;
+    width:14px;
+    top:170px;
+    left:-12px;
+    border-left: 6px solid #ffa945;
+    border-bottom: 4px solid #ffa945;
+    border-bottom-left-radius: 10px;
+    transform: skew(-40deg);
+    background-color:#fce2c4;
+    
+
+}
+.face::after{
+    content:"";
+    position:absolute;
+    width:24px ;
+    height:24px ;
+    background-color: #fce2c4;
+    top:80px;
+    left:56px;
+    border-radius:50%;
+    border: 4px solid #ffa945;
+    border-top:none ;
+    border-left:none ;
+    transform: rotate(-40deg);
+}
+.nose{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color:#fce2c4;
+    left: 172px;
+    bottom: 90px;
+    border: 4px solid #ffa945;
+    border-right: none;
+    border-radius: 14px 0 0 14px;
+    transform: rotate(4deg);
+    z-index: 1;
+
+
+}
+.nose::after{
+    position:absolute;
+    content:"";
+    width: 30px;
+    height: 10px;
+    background-color: #fce2c4;
+    top:-4px;
+    left:30px;
+    border-top: 4px solid #ffa945;
+
+}
+.eye{
+    position:relative;
+    width: 40px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: rgb(255,255,255);
+    left: 206px;
+    bottom: 188px;
+    border: 3px solid rgb(0,0,0);
+    z-index: 0;
+}
+.eye::before{ 
+content:"";
+position: absolute;
+height:12px;
+width: 10px;
+background-color: rgb(0,0,0);
+border-radius: 50%;
+top:22px;
+left:14px;
+transform: rotate(16deg);
+
+}
+.eye::after{
+    content:"";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: rgb(255,255,255);
+    top:24px;
+    left:18px;
+    border-radius:50%;
+}
+.eye1{
+    height: 40px;
+    width: 40px;
+    bottom:224px;
+    left: 234px;
+    z-index: 5;
+}
+.eye1::after {
+    top:14px;
+}
+.eye1::before{
+    top:12px;
+}
+.hair{
+    position:relative;
+    bottom : 252px;
+    left:10px;
+    z-index: 50;
+}
+.hair>div:nth-child(1){
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid rgb(0,128,0);
+    bottom:40px;
+    left:180px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(30deg);
+}
+.hair>div:nth-child(2){
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid rgb(0,128,0);
+    bottom:40px;
+    left:200px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(70deg);
+}
+.hair>div:nth-child(3){
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    border-top: 20px solid rgb(0,128,0);
+    bottom:50px;
+    left:220px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(130deg);
+}
+.hair>div:nth-child(4){
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid rgb(0,128,0);
+    bottom:20px;
+    left:200px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(20deg);
+}
+.hair > :nth-child(5){
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    border-top: 20px solid rgb(0,128,0);
+    bottom:20px;
+    left:260px;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(10deg);
 }
